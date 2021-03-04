@@ -15,3 +15,5 @@ E
 profiles_api/views.py,b\d\bdb932888743c090295b9dc472a7e3b4a2fbf346
 D
 profiles_api/urls.py,f\e\fe0793221b36dd18d2bd11a94b94f74716392349
+K
+profiles_api/serializers.py,a\0\a05cf0e435121e821388e5d57b8f3a56968b7183
