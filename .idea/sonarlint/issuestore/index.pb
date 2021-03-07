@@ -17,3 +17,7 @@ D
 profiles_api/urls.py,f\e\fe0793221b36dd18d2bd11a94b94f74716392349
 K
 profiles_api/serializers.py,a\0\a05cf0e435121e821388e5d57b8f3a56968b7183
+S
+#profiles_api/migrations/__init__.py,d\3\d3699e9d5715283dde333f6f55d3f32fefffc5a8
+J
+profiles_api/permssions.py,b\7\b7e32c7fd84cd4cf32dadea3cb23bae57ebe19b2
