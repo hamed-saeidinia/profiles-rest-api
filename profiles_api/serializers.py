@@ -19,7 +19,8 @@ class UserProfileSerializer(serializers.ModelSerializer):
                 'style': {'input_type': 'password'}
             }
         }
-        def creat(self,validated_data):
+
+        def creat(self, validated_data):
             """Create and return a new user"""
             user = models.UserProfile.objects.create_user(
                 email=validated_data['email'],
@@ -27,3 +28,14 @@ class UserProfileSerializer(serializers.ModelSerializer):
                 password=validated_data['password']
             )
             return user
+
+
+class ProfileFeedItemSerializer(serializers.ModelSerializer):
+    """Serializes profile feed items"""
+
+    class Meta:
+        model = models.ProfileFeedItem
+        fields = ('id', 'user_profile', 'status_text', 'created_on')
+        extra_kwargs = {
+            'profile_user': {'read_only': True}
+        }
